@@ -55,11 +55,11 @@ shift # past argument or value
 done
 
 # default
-if 	 [ -z "$R" 			   ]; then R="><(((°>"; fi
-if 	 [ -z "$L" 			   ]; then L="<°)))><"; fi
-if 	 [ -z "${spaces}" 	   ]; then let spaces=$(stty size | cut -d" " -f2)-${#R}; fi
-if 	 [ -z "${sleeptime}"   ]; then sleeptime=$(bc -l <<< 2.5/${spaces}); fi
-if   [ -z "${COL}" 		   ]; then COL="${NC}"
+if   [ -z "$R" 	           ]; then R="><(((°>"; fi
+if   [ -z "$L" 	           ]; then L="<°)))><"; fi
+if   [ -z "${spaces}"      ]; then let spaces=$(stty size | cut -d" " -f2)-${#R}; fi
+if   [ -z "${sleeptime}"   ]; then sleeptime=$(bc -l <<< 2.5/${spaces}); fi
+if   [ -z "${COL}"         ]; then COL="${NC}"
 elif [ "${COL}" = "RED"    ]; then COL="${RED}"
 elif [ "${COL}" = "GREEN"  ]; then COL="${GREEN}"
 elif [ "${COL}" = "BLUE"   ]; then COL="${BLUE}"
