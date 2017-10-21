@@ -2,9 +2,9 @@
 
 Prints a string representing a fish ont the terminal, going from left to right and vice versa: `><(((°>`
 
-The fish can be replaced by any other string or character.
+The fish can be replaced by any other string or character. 
 
-It can also be printed in color.
+It can also be printed in color :rainbow:
 
 ## How to
 
