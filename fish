@@ -12,8 +12,8 @@ Usage: fish
 		${PURPLE}-h${NC}|${PURPLE}--help${NC}   : Show this help message and quit
 		${PURPLE}-r${NC}|${PURPLE}--right${NC}  : characters when going right
 		${PURPLE}-l${NC}|${PURPLE}--left${NC}   : characters when going left
-		${PURPLE}-s${NC}|${PURPLE}--spaces${NC} : number of spaces
-		${PURPLE}-t${NC}|${PURPLE}--time${NC}   : sleep time
+		${PURPLE}-s${NC}|${PURPLE}--spaces${NC} : size of the aquarium
+		${PURPLE}-t${NC}|${PURPLE}--time${NC}   : slowness of the fish
 		${PURPLE}-c${NC}|${PURPLE}--color${NC}  : ${RED}RED${NC} ${GREEN}GREEN${NC} ${BLUE}BLUE${NC} ${PURPLE}PURPLE${NC}"
 }
 
@@ -100,7 +100,7 @@ while true; do
 			let k-=1
 		fi
 	fi
-	let init+=1
+	let init=1
 	echo -ne "\r${COL}${_L}${X}${_R}${NC}"
 	sleep ${sleeptime}
 done
