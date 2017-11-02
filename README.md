@@ -13,7 +13,7 @@ Usage: fish
 		-h|--help   : Show this help message and quit
 		-r|--right  : characters when going right
 		-l|--left   : characters when going left
-		-s|--spaces : number of spaces
-		-t|--time   : sleep time
+		-s|--spaces : size of the aquarium
+		-t|--time   : slowness of the fish
 		-c|--color  : RED GREEN BLUE PURPLE
 ```
